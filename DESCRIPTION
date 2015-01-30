@@ -1,9 +1,9 @@
-Package: candoo
+Package: Rcandoo
 Type: Package
-Title: What the package does (short line)
+Title: personal package for duncandoo
 Version: 1.0
 Date: 2015-01-30
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Author: Duncan McPherson
+Maintainer: Duncan McPherson <duncan@mcpherson.org.uk>
+Description: Some functions I like, in particular format for rmarkdown -> reveal.js
+License: GNU Affero GPL v>3

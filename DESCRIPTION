@@ -1,9 +1,10 @@
 Package: Rcandoo
 Type: Package
 Title: personal package for duncandoo
-Version: 1.0
+Version: 0.0.0.9000
 Date: 2015-01-30
-Author: Duncan McPherson
+Authors@R: person("Duncan", "McPherson", email = "duncan@mcpherson.org.uk",
+  role = c("aut", "cre"))
 Maintainer: Duncan McPherson <duncan@mcpherson.org.uk>
 Description: Some functions I like, in particular format for rmarkdown -> reveal.js
 License: GNU Affero GPL v>3

@@ -1,18 +1,18 @@
-\name{candoo-package}
-\alias{candoo-package}
-\alias{candoo}
+\name{Rcandoo-package}
+\alias{Rcandoo-package}
+\alias{Rcandoo}
 \docType{package}
 \title{
-Candoo is the personal package for duncandoo
+Rcandoo is the personal package for duncandoo
 }
 \description{
 Personal package containing functions wot I wrote and other stuff. Notably my attempt at a rmarkdown render format for reveal.js slides
 }
 \details{
 \tabular{ll}{
-Package: \tab candoo\cr
+Package: \tab Rcandoo\cr
 Type: \tab Package\cr
-Version: \tab 1.0\cr
+Version: \tab 0.0.0.9000\cr
 Date: \tab 2015-01-30\cr
 License: \tab GNU Affero GPL v3\cr
 }
@@ -26,7 +26,6 @@ Maintainer: Duncan <duncan@mcpherson>
 \references{
 ~~ Literature or other references for background information ~~
 }
-~~ Optionally other standard keywords, one per line, from file KEYWORDS in the R documentation directory ~~
 \keyword{ package }
 \seealso{
 ~~ Optional links to other man pages, e.g. ~~

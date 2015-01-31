@@ -1,4 +1,4 @@
-name: Reveal.js slides
+name: Revealjs_slides
 description: >
   Template for making reveal.js format slides from .Rmd
 create_dir: true

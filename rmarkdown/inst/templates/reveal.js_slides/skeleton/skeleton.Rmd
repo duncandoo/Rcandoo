@@ -1,6 +1,0 @@
----
-title: "Presentation Title"
-author: "my name"
-date: "`r Sys.Date()`"
-output: Rcandoo::reveal.js_format
----

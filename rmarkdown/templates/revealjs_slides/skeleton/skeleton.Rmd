@@ -6,13 +6,23 @@ revealjs-url: "../../../"
 output: 
   Rcandoo::revealjs_format:
     theme: beige
+    transition: default
 ---
 
-## R Markdown / pandoc / reveal.js
+# R Markdown / pandoc / reveal.js
+
+## R Markdown
 
 This is an R Markdown presentation adapted to use the reveal.js framework for displaying the slides. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
+### Using **knit**
+
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+#
+## Sub slide header
+
+One of the great things about reveal.js is its use of two dimensional slides. Level 1 headings create sections, level 2 headings slides within sections, and level three and below the slide content.
 
 ## Slide with Bullets
 
@@ -31,3 +41,5 @@ summary(cars)
 ```{r, echo=FALSE}
 plot(cars)
 ```
+
+## Slide with background image {data-background=gary_files/figure-revealjs/unnamed-chunk-2-1.png}

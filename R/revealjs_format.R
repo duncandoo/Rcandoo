@@ -13,20 +13,23 @@
 #' output:
 #'   Rcandoo::revealjs_format:
 #'     theme: beige
+#'     transition: default
 #' ---
 #' 
 #' render('My Presentation.Rmd')
 
-revealjs_format <- function(keep_md = FALSE, theme = 'beige') {
+revealjs_format <- function(keep_md = FALSE, theme = 'beige', transition = 'default') {
     #get theme
-    theme <-  paste('-V theme=', theme, sep="")
+    theme <-  paste('--variable=theme:', theme, sep="")
     
+    #get transition
+    transition <- paste('--variable=transition:', transition, sep="")
     # get the revealjs template
     root <- system.file(package = "Rcandoo")
     template <- paste('--template=', root, "/rmarkdown/templates/revealjs_slides/resources/revealjs_template.html", sep="")
     
     require(rmarkdown)
     output_format(knitr = knitr_options(opts_chunk = list(dev = 'png')),
-                  pandoc = pandoc_options(to = "revealjs", args = c('--standalone', theme, template)),
+                  pandoc = pandoc_options(to = "revealjs", args = c('--standalone', theme, transition, template, '--slide-level=2')),
                   keep_md = keep_md, clean_supporting = FALSE)
 }

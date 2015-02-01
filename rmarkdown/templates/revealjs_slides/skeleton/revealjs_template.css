@@ -1,0 +1,8 @@
+/* revealjs_template.css 
+overwrite the reveal theme h1 when it is inside level2 sections to look like the original h2 level.
+This is necessary because pandoc gives all its slide level headers <h1>, even if they are 'sub-slides'.
+
+This is only for the beige theme right now, but could be extended to the others.
+*/
+
+.reveal section.level2 h1 { font-size: 2.11em; text-shadow: none; }

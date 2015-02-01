@@ -4,7 +4,7 @@
 \alias{revealjs_format}
 \title{An rmarkdown format for producing reveal.js slides}
 \usage{
-revealjs_format(keep_md = FALSE, theme = "moon")
+revealjs_format(keep_md = FALSE, theme = "beige")
 }
 \arguments{
 \item{keep_md}{Do you want to keep the .md intermediate file? Defaults to FALSE.}
@@ -21,7 +21,7 @@ Put a YAML block at the top of your .rmd file
 title: "My Presentation"
 output:
   Rcandoo::revealjs_format:
-    theme: moon
+    theme: beige
 ---
 
 render('My Presentation.Rmd')

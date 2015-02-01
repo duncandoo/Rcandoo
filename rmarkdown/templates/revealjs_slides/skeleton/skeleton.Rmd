@@ -2,9 +2,10 @@
 title: "Presentation Title"
 author: "my name"
 date: "`r Sys.Date()`"
+revealjs-url: "../../../"
 output: 
   Rcandoo::revealjs_format:
-    theme: moon
+    theme: beige
 ---
 
 ## R Markdown / pandoc / reveal.js

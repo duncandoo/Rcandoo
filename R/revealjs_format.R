@@ -12,12 +12,12 @@
 #' title: "My Presentation"
 #' output:
 #'   Rcandoo::revealjs_format:
-#'     theme: moon
+#'     theme: beige
 #' ---
 #' 
 #' render('My Presentation.Rmd')
 
-revealjs_format <- function(keep_md = FALSE, theme = 'moon') {
+revealjs_format <- function(keep_md = FALSE, theme = 'beige') {
     #get theme
     theme <-  paste('-V theme=', theme, sep="")
     
@@ -28,5 +28,5 @@ revealjs_format <- function(keep_md = FALSE, theme = 'moon') {
     require(rmarkdown)
     output_format(knitr = knitr_options(opts_chunk = list(dev = 'png')),
                   pandoc = pandoc_options(to = "revealjs", args = c('--standalone', theme, template)),
-                  keep_md = TRUE, clean_supporting = FALSE)
+                  keep_md = keep_md, clean_supporting = FALSE)
 }

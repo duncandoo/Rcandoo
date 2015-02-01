@@ -6,3 +6,5 @@ This is only for the beige theme right now, but could be extended to the others.
 */
 
 .reveal section.level2 h1 { font-size: 2.11em; text-shadow: none; }
+.reveal sub {font-size: smaller;}
+.reveal sup {font-size: smaller;}

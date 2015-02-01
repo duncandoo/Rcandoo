@@ -8,7 +8,12 @@ output:
     theme: beige
     transition: default
 ---
-
+```{r mainSettings, echo=FALSE}
+library(knitr)
+# knitr options
+opts_chunk$set(cache = TRUE, echo = FALSE)
+options(scipen=2, digits=2)
+```
 # R Markdown / pandoc / reveal.js
 
 ## R Markdown
@@ -32,14 +37,49 @@ One of the great things about reveal.js is its use of two dimensional slides. Le
 
 ## Slide with R Code and Output
 
-```{r}
+```{r, echo=TRUE}
 summary(cars)
 ```
 
 ## Slide with Plot
 
-```{r, echo=FALSE}
+```{r}
 plot(cars)
 ```
 
-## Slide with background image {data-background=gary_files/figure-revealjs/unnamed-chunk-2-1.png}
+## Slide with background image {data-background=untitled_files/figure-revealjs/unnamed-chunk-2-1.png}
+
+## Slide with maths
+
+$$ x^2 = y_2 $$
+
+This should be converted to lovely MathJax.
+
+## Slide with non-R code
+```js
+document.getElementById('demo').innerHTML = 'Hello Javascript!'
+```
+Should be syntax highlighted nicely
+
+Note: this should work as speaker notes, but may need some work
+<div class="notes">
+These notes should work however, by pressing `s` while on the slides
+
+- It can contain markdown
+- like this list
+</div>
+
+## A table made from R code
+```{r kableTable, results='asis'}
+kable(summary(cars), align = c('r', 'l'), caption = "The caption for this table")
+```
+
+## And a table hand written
+
+| Right | Left | Default | Center |
+|------:|:-----|---------|:------:|
+|   12  |  12  |    12   |    12  |
+|  123  |  123 |   123   |   123  |
+|    1  |    1 |     1   |     1  |
+
+  : Demonstration of simple table syntax.

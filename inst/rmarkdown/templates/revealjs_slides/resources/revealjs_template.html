@@ -83,12 +83,12 @@ $endif$
                 width: $if(width)$$width$$else$1620$endif$,
                 height: $if(height)$$height$$else$1080$endif$,
                 // Factor of the display size that should remain empty around the content
-                margin: 0.15,
+                margin: 0.1,
                 // Bounds for smallest/largest possible scale to apply to content
                 minScale: 0.2,
-                maxScale: 1.2, 
+                maxScale: 1.5, 
                 math: {
-                    mathjax: '$revealjs-url$/plugin/mathjax.MathJax.js',
+                    mathjax: '$revealjs-url$/../mathjax/MathJax.js',
                     config: 'TeX-AMS_HTML-full' // See http://docs.mathjax.org/en/latest/config-files.html
                 },
 

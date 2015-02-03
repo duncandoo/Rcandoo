@@ -2,7 +2,7 @@
 title: "Presentation Title"
 author: "my name"
 date: "`r Sys.Date()`"
-revealjs-url: "../../../"
+revealjs-url: "../../reveal.js/"
 output: 
   Rcandoo::revealjs_format:
     theme: beige
@@ -11,7 +11,7 @@ output:
 ```{r mainSettings, echo=FALSE}
 library(knitr)
 # knitr options
-opts_chunk$set(cache = TRUE, echo = FALSE)
+opts_chunk$set(cache = TRUE, echo = FALSE, fig.retina = 2, dpi = 115, fig.path = 'figure/')
 options(scipen=2, digits=2)
 ```
 # R Markdown / pandoc / reveal.js
@@ -47,7 +47,7 @@ summary(cars)
 plot(cars)
 ```
 
-## Slide with background image {data-background=untitled_files/figure-revealjs/unnamed-chunk-2-1.png}
+## Slide with background image {data-background=figure/unnamed-chunk-2-1.png}
 
 ## Slide with maths
 

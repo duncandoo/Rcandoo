@@ -30,6 +30,6 @@ revealjs_format <- function(keep_md = FALSE, theme = 'beige', transition = 'defa
     
     require(rmarkdown)
     output_format(knitr = knitr_options(opts_chunk = list(dev = 'png')),
-                  pandoc = pandoc_options(to = "revealjs", args = c('--standalone', theme, transition, template, '--slide-level=2')),
+                  pandoc = pandoc_options(to = "revealjs", args = c('--standalone', theme, transition, template, '--slide-level=2', '--smart')),
                   keep_md = keep_md, clean_supporting = FALSE)
 }
